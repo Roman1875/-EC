@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СEС Защита - Профессиональная дезинсекция и дератизация</title>
+  
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109002328', 'ym');
+      ym(109002328, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109002328" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+  <style>
+    :root {
+      --primary: #0F172A; 
+      --primary-light: #1E293B;
+      --accent: #EA580C; 
+      --accent-hover: #C2410C;
+      --text: #334155;
+      --text-light: #64748B;
+      --bg-light: #F8FAFC;
+      --white: #FFFFFF;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.08);
+      --shadow-hover: 0 20px 40px -10px rgba(15, 23, 42, 0.15);
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+    body { color: var(--text); line-height: 1.6; background-color: var(--white); }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    /* Топ-баннер (Лицензия) */
+    .top-warning { background-color: #EF4444; color: var(--white); text-align: center; padding: 12px 20px; font-weight: 700; font-size: 15px; position: relative; z-index: 101; line-height: 1.5; }
+    .top-warning span { display: block; font-size: 13px; font-weight: 500; opacity: 0.9; margin-top: 4px; }
+
+    /* Шапка */
+    header { background: var(--white); padding: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.03); position: sticky; top: 0; z-index: 100; }
+    .header-content { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 28px; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 8px; letter-spacing: -0.5px; }
+    .logo span { color: var(--accent); }
+    .logo-sub { font-size: 13px; color: var(--text-light); display: block; line-height: 1; font-weight: 500; }
+    .header-contacts { display: flex; gap: 30px; align-items: center; }
+    .phone { font-weight: 700; font-size: 18px; color: var(--primary); transition: color 0.2s; }
+    .phone:hover { color: var(--accent); }
+    .btn-call { background: var(--primary); color: var(--white); padding: 12px 24px; border-radius: var(--radius-sm); border: none; cursor: pointer; font-weight: 600; font-size: 15px; transition: 0.3s; }
+    .btn-call:hover { background: var(--accent); transform: translateY(-2px); }
+
+    /* Главный экран */
+    .hero { background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.85)), url('img/hero-bg.jpg') center/cover; padding: 80px 0; color: var(--white); }
+    .hero-flex { display: flex; gap: 60px; align-items: center; justify-content: space-between; }
+    .hero-text { flex: 1; }
+    .hero-text h1 { font-size: 44px; font-weight: 800; margin-bottom: 20px; line-height: 1.15; letter-spacing: -1px; }
+    .hero-text p { font-size: 20px; margin-bottom: 30px; color: #CBD5E1; }
+    .licence-badge { display: inline-flex; align-items: center; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); padding: 8px 16px; border-radius: 100px; font-weight: 600; font-size: 14px; margin-bottom: 25px; backdrop-filter: blur(5px); }
+    .licence-badge span { color: #FBBF24; margin-right: 8px; font-size: 16px; }
+
+    /* Форма */
+    .hero-form { flex: 0 0 420px; background: var(--white); padding: 40px; border-radius: var(--radius-lg); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); color: var(--primary); }
+    .hero-form h3 { margin-bottom: 25px; text-align: center; font-size: 24px; font-weight: 700; }
+    .form-input { width: 100%; padding: 16px; margin-bottom: 16px; border: 2px solid #E2E8F0; border-radius: var(--radius-sm); font-size: 16px; transition: all 0.3s; outline: none; background: #F8FAFC; }
+    .form-input:focus { border-color: var(--accent); background: var(--white); box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.1); }
+    .btn-submit { width: 100%; background: var(--accent); color: var(--white); padding: 18px; border: none; border-radius: var(--radius-sm); font-size: 18px; font-weight: 700; cursor: pointer; transition: 0.3s; margin-top: 10px; }
+    .btn-submit:hover { background: var(--accent-hover); transform: translateY(-2px); }
+
+    /* Галочки */
+    .custom-checkbox { display: flex; align-items: flex-start; position: relative; padding-left: 30px; margin-bottom: 12px; cursor: pointer; font-size: 12px; color: var(--text-light); line-height: 1.4; user-select: none; transition: 0.3s; }
+    .custom-checkbox input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
+    .checkmark { position: absolute; top: 0; left: 0; height: 20px; width: 20px; background-color: #E2E8F0; border-radius: 4px; transition: 0.2s; border: 2px solid transparent; }
+    .custom-checkbox:hover input ~ .checkmark { background-color: #CBD5E1; }
+    .custom-checkbox input:checked ~ .checkmark { background-color: var(--accent); border-color: var(--accent); }
+    .checkmark:after { content: ""; position: absolute; display: none; left: 6px; top: 2px; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+    .custom-checkbox input:checked ~ .checkmark:after { display: block; }
+    .custom-checkbox a { color: var(--primary); text-decoration: underline; font-weight: 600; }
+    .custom-checkbox a:hover { color: var(--accent); }
+
+    /* Ошибки */
+    .error-highlight { border-color: #EF4444 !important; background-color: #FEF2F2 !important; }
+    .error-text { color: #EF4444 !important; }
+    .error-text a { color: #EF4444 !important; }
+    .shake { animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both; }
+    @keyframes shake {
+      10%, 90% { transform: translate3d(-2px, 0, 0); }
+      20%, 80% { transform: translate3d(3px, 0, 0); }
+      30%, 50%, 70% { transform: translate3d(-5px, 0, 0); }
+      40%, 60% { transform: translate3d(5px, 0, 0); }
+    }
+
+    /* Услуги */
+    .services { padding: 100px 0; background: var(--bg-light); }
+    .section-title { text-align: center; font-size: 36px; font-weight: 800; margin-bottom: 60px; color: var(--primary); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+    .card { background: var(--white); padding: 40px; border-radius: var(--radius-md); box-shadow: var(--shadow-soft); transition: all 0.3s ease; cursor: pointer; border: 1px solid #F1F5F9; display: flex; flex-direction: column; }
+    .card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); border-color: #E2E8F0; }
+    .card h4 { font-size: 22px; font-weight: 700; margin-bottom: 15px; color: var(--primary); }
+    .card p { color: var(--text-light); flex-grow: 1; }
+    .read-more { display: inline-flex; align-items: center; margin-top: 25px; color: var(--accent); font-weight: 600; font-size: 15px; transition: 0.2s; }
+    .read-more::after { content: '→'; margin-left: 8px; transition: transform 0.2s; }
+    .card:hover .read-more::after { transform: translateX(5px); }
+
+    /* Преимущества */
+    .advantages { padding: 100px 0; background: var(--white); }
+    .adv-split { display: flex; gap: 60px; align-items: flex-start; }
+    .adv-left { flex: 1; position: sticky; top: 120px; }
+    .adv-left h2 { font-size: 42px; font-weight: 800; color: var(--primary); line-height: 1.2; margin-bottom: 20px; }
+    .adv-left p { font-size: 18px; color: var(--text-light); line-height: 1.6; }
+    
+    .adv-right { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+    .adv-row { display: flex; gap: 25px; align-items: center; background: var(--white); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-soft); cursor: pointer; transition: all 0.3s; border-left: 4px solid transparent; border: 1px solid #F1F5F9; }
+    .adv-row:hover { transform: translateX(-10px); border-left: 4px solid var(--accent); box-shadow: var(--shadow-hover); }
+    .adv-icon { font-size: 36px; background: var(--bg-light); width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+    .adv-text h4 { font-size: 20px; color: var(--primary); margin-bottom: 5px; }
+    .adv-text p { color: var(--text-light); font-size: 15px; }
+
+    /* Карта */
+    .map-section { width: 100%; height: 500px; line-height: 0; }
+    .map-section iframe { width: 100%; height: 100%; border: none; filter: grayscale(0.2); }
+
+    /* Модальное окно (Универсальное) */
+    .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.7); opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(4px); }
+    .modal.show { display: flex; opacity: 1; align-items: center; justify-content: center; }
+    .modal-content { background-color: var(--white); padding: 50px; border-radius: var(--radius-lg); width: 90%; max-width: 600px; position: relative; transform: translateY(-20px) scale(0.95); transition: all 0.3s; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+    .modal.show .modal-content { transform: translateY(0) scale(1); }
+    .close-btn { position: absolute; top: 20px; right: 25px; color: #94A3B8; font-size: 32px; cursor: pointer; transition: 0.2s; }
+    .close-btn:hover { color: var(--accent); }
+    .modal-title { color: var(--primary); font-size: 28px; font-weight: 800; margin-bottom: 20px; }
+    .modal-body { font-size: 16px; color: var(--text); line-height: 1.8; }
+
+    /* Модальное окно (Для документов) */
+    .legal-modal-content { max-width: 800px; padding: 40px; }
+    .legal-body { max-height: 60vh; overflow-y: auto; text-align: left; font-size: 14px; padding-right: 15px; border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0; padding-top: 20px; margin-bottom: 20px; }
+    .legal-body p { margin-bottom: 12px; }
+
+    /* Подвал */
+    footer { background: var(--primary); color: #94A3B8; padding: 60px 0 30px; font-size: 15px; }
+    .footer-flex { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; margin-bottom: 40px; }
+    .footer-brand h3 { color: var(--white); font-size: 24px; margin-bottom: 15px; }
+    .footer-links { display: flex; flex-direction: column; gap: 12px; }
+    .footer-links a:hover { color: var(--white); text-decoration: underline; cursor: pointer; }
+    .copyright { text-align: center; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); }
+
+    @media (max-width: 992px) {
+      .hero-flex, .adv-split { flex-direction: column; }
+      .adv-left { position: static; text-align: center; margin-bottom: 30px; }
+      .hero-form { width: 100%; max-width: 500px; margin: 0 auto; }
+      .header-contacts { flex-direction: column; gap: 5px; align-items: flex-end; }
+      .btn-call { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Топ Баннер -->
+  <div class="top-warning">
+    ВНИМАНИЕ! Лицензия 80.01.01.003..Л.000024.04.26
+    <span>Без лицензии запрещено работать! Ни в коем случае не заказывайте эти услуги, если нет номера и даты лицензии — это опасно для здоровья.</span>
+  </div>
+
+  <!-- Шапка -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <div>СE<span>C</span><span class="logo-sub">Защита</span></div>
+      </div>
+      <div class="header-contacts">
+        <div style="text-align: right;">
+          <a href="tel:+79495651200" class="phone">+7 (949) 565-12-00</a><br>
+          <a href="tel:+79498037876" class="phone">+7 (949) 803-78-76</a>
+        </div>
+        <button class="btn-call" onclick="document.getElementById('order-form').scrollIntoView({behavior: 'smooth'})">Заказать звонок</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Главный экран -->
+  <section class="hero">
+    <div class="container hero-flex">
+      <div class="hero-text">
+        <div class="licence-badge"><span>✓</span> Предприятие аккредитовано (г. Мариуполь)</div>
+        <h1>Уничтожение насекомых, грызунов и вирусов с гарантией</h1>
+        <p>Профессионально занимаемся дезинсекцией, дератизацией и дезинфекцией с 1997 года.</p>
+        <ul style="list-style: none; margin-bottom: 30px; line-height: 2.2; font-size: 18px; color: #E2E8F0;">
+          <li>✓ Безопасные сертифицированные препараты</li>
+          <li>✓ Официальный договор и гарантия результата</li>
+          <li>✓ Выезд в день обращения</li>
+        </ul>
+      </div>
+      
+      <!-- Форма -->
+      <div class="hero-form" id="order-form">
+        <h3>Рассчитать стоимость</h3>
+        <form action="telegram.php" method="POST" id="main-form" novalidate>
+          <input type="hidden" name="form_subject" value="Заявка с сайта">
+          
+          <input class="form-input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="form-input" type="tel" name="phone" placeholder="Ваш телефон" required>
+          
+          <div style="margin-top: 20px; margin-bottom: 25px;">
+              <!-- 1. Согласие ПД (Отдельная галочка) -->
+              <label class="custom-checkbox">
+                  <input type="checkbox" name="privacy_consent" required>
+                  <span class="checkmark"></span>
+                  <span>Я даю согласие на <a href="#" onclick="openLegalModal('consent'); return false;">обработку персональных данных</a></span>
+              </label>
+
+              <!-- 2. Политика конфиденциальности (Отдельная галочка) -->
+              <label class="custom-checkbox">
+                  <input type="checkbox" name="policy_consent" required>
+                  <span class="checkmark"></span>
+                  <span>Я подтверждаю, что ознакомлен с <a href="#" onclick="openLegalModal('privacy'); return false;">Политикой конфиденциальности</a></span>
+              </label>
+              
+              <!-- 3. Оферта -->
+              <label class="custom-checkbox">
+                  <input type="checkbox" name="offer_consent" required>
+                  <span class="checkmark"></span>
+                  <span>Я принимаю условия <a href="#" onclick="openLegalModal('offer'); return false;">Публичной оферты</a></span>
+              </label>
+
+              <!-- 4. Рекламная рассылка (Короткая + модалка) -->
+              <label class="custom-checkbox">
+                  <input type="checkbox" name="promo_consent">
+                  <span class="checkmark"></span>
+                  <span>Я даю согласие на получение <a href="#" onclick="openLegalModal('promo'); return false;">рекламной и информационной рассылки</a></span>
+              </label>
+          </div>
+
+          <button type="button" class="btn-submit" id="submit-btn">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section class="services">
+    <div class="container">
+      <h2 class="section-title">Наши услуги</h2>
+      <div class="grid">
+        <div class="card" onclick="openModal('Дезинсекция', '<b>Дезинсекция</b> — это комплекс мер по уничтожению опасных и надоедливых насекомых: тараканов, клопов, муравьев, блох. <br><br>Мы применяем современные методы холодного и горячего тумана.')">
+          <h4>Дезинсекция</h4>
+          <p>Уничтожение тараканов, клопов, муравьев, блох.</p>
+          <span class="read-more">Подробнее</span>
+        </div>
+        <div class="card" onclick="openModal('Дератизация', '<b>Дератизация</b> направлена на полное истребление крыс, мышей и кротов. <br><br>Грызуны являются переносчиками опасных заболеваний. Мы используем комплексный подход.')">
+          <h4>Дератизация</h4>
+          <p>Эффективная борьба с грызунами: крысами и мышами.</p>
+          <span class="read-more">Подробнее</span>
+        </div>
+        <div class="card" onclick="openModal('Дезинфекция', '<b>Дезинфекция</b> — это профессиональное обеззараживание помещений. <br><br>Уничтожаем вирусы, бактерии, плесень, грибок и другие патогенные микроорганизмы.')">
+          <h4>Дезинфекция</h4>
+          <p>Уничтожение вирусов, бактерий и возбудителей инфекций.</p>
+          <span class="read-more">Подробнее</span>
+        </div>
+        <div class="card" onclick="openModal('Обработка открытых территорий', '<b>Аккредитованная обработка открытых территорий</b>. <br><br>Проводим масштабные сезонные работы по уничтожению <b>клещей, комаров и мух</b> на дачных участках и в парках.')">
+          <h4>Открытые территории</h4>
+          <p>Аккредитованная обработка от клещей, комаров и мух.</p>
+          <span class="read-more">Подробнее</span>
+        </div>
+        <div class="card" onclick="openModal('Фумигация', '<b>Фумигация</b> — это специализированный метод уничтожения вредителей с помощью ядовитых паров и газов. <br><br>Мы проводим очистку складов, элеваторов, зернохранилищ.')">
+          <h4>Фумигация</h4>
+          <p>Очистка складов, элеваторов, зернохранилищ от вредителей.</p>
+          <span class="read-more">Подробнее</span>
+        </div>
+        <div class="card" onclick="openModal('Дезодорация', '<b>Дезодорация</b> — устранение неприятных и въевшихся запахов, а не их маскировка. <br><br>Удаляем запахи гари, сырости и табачного дыма на молекулярном уровне.')">
+          <h4>Дезодорация</h4>
+          <p>Профессиональное устранение любых неприятных запахов.</p>
+          <span class="read-more">Подробнее</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Преимущества -->
+  <section class="advantages">
+    <div class="container">
+      <div class="adv-split">
+        <div class="adv-left">
+          <h2>Почему стоит <br>выбрать именно нас?</h2>
+          <p>Мы работаем честно, безопасно и с гарантией. Наш подход основан на многолетнем опыте и строгом соблюдении всех санитарных норм.</p>
+        </div>
+        
+        <div class="adv-right">
+          <div class="adv-row" onclick="openModal('Безопасные препараты', 'Используем препараты <b>IV класса малоопасных веществ</b>. <br><br>Они не имеют едкого запаха и абсолютно безопасны для детей, беременных женщин и животных.')">
+            <div class="adv-icon">🌱</div>
+            <div class="adv-text">
+              <h4>Безопасные препараты</h4>
+              <p>Сертифицированные средства, безвредные для людей и животных.</p>
+            </div>
+          </div>
+          <div class="adv-row" onclick="openModal('100% Гарантия', 'Мы уверены в качестве нашей работы. <br><br>Если в течение гарантийного срока вредители появятся снова — мы <b>проведем повторную обработку бесплатно</b>.')">
+            <div class="adv-icon">🛡️</div>
+            <div class="adv-text">
+              <h4>100% Гарантия результата</h4>
+              <p>Работаем по договору. При необходимости — повторная обработка за наш счет.</p>
+            </div>
+          </div>
+          <div class="adv-row" onclick="openModal('Лицензия и СанПиН', 'Мы являемся <b>официальной лицензированной организацией</b>. <br><br>Выдаем официальный акт выполненных работ, который подходит для проверок Роспотребнадзора.')">
+            <div class="adv-icon">📜</div>
+            <div class="adv-text">
+              <h4>Лицензированная организация</h4>
+              <p>Отвечаем всем строгим требованиям и нормативам СанПиН.</p>
+            </div>
+          </div>
+          <div class="adv-row" onclick="openModal('Опыт с 1997 года', 'Мы занимаемся профессиональным уничтожением вредителей <b>уже более 25 лет</b>.<br><br>Накоплен колоссальный практический опыт работы на объектах любой сложности.')">
+            <div class="adv-icon">📅</div>
+            <div class="adv-text">
+              <h4>Опыт с 1997 года</h4>
+              <p>Колоссальный опыт работы с жилыми и коммерческими объектами.</p>
+            </div>
+          </div>
+          <div class="adv-row" onclick="openModal('Гибкий график и поддержка', '<b>Работаем в удобное для вас время.</b><br><br>Готовы приехать вечером, в выходной день или даже ночью. Обеспечиваем последующую поддержку.')">
+            <div class="adv-icon">🤝</div>
+            <div class="adv-text">
+              <h4>Гибкий график работы</h4>
+              <p>Выезжаем в удобное время, всегда остаемся на связи после обработки.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Карта -->
+  <section class="map-section">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0ebf558af927b486a520756b4899396cc172a5390c089ce196fa0c360a6ff08b&amp;source=constructor"></iframe>
+  </section>
+
+  <!-- Модальное окно (Обычное) -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('myModal')">&times;</span>
+      <h3 id="modalTitle" class="modal-title">Название</h3>
+      <div id="modalBody" class="modal-body">Текст...</div>
+      <div style="margin-top: 35px; text-align: center;">
+         <button class="btn-submit" style="width: auto; padding: 14px 30px;" onclick="closeModal('myModal'); document.getElementById('order-form').scrollIntoView({behavior: 'smooth'})">Оставить заявку</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно (Документы) -->
+  <div id="legalModal" class="modal">
+    <div class="modal-content legal-modal-content">
+      <span class="close-btn" onclick="closeModal('legalModal')">&times;</span>
+      <h3 id="legalModalTitle" class="modal-title">Документ</h3>
+      <div id="legalModalBody" class="legal-body"></div>
+      <div style="text-align: center;">
+         <button class="btn-call" onclick="closeModal('legalModal')">Закрыть документ</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ТЕКСТЫ ЮРИДИЧЕСКИХ ДОКУМЕНТОВ
+    const legalDocs = {
+      consent: `
+        <p><b>СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</b></p>
+        <p>Настоящим я, действуя своей волей и в своем интересе, при оставлении заявки на сайте https://cec103.ru/ даю свое согласие ИП Кузнецов С С (ИНН 500121799960, ОГРН 325930100062884, адрес: 287549, ДНР, Г.О. Мариуполь, ул. Котляревского, д. 3) на обработку моих персональных данных.</p>
+        <p>Согласие дается на обработку следующих персональных данных: Имя, Номер телефона.</p>
+        <p>Цель обработки персональных данных: обработка заявок и обращений, обратная связь со мной, выполнение договора, улучшение работы сайта.</p>
+        <p>В ходе обработки с персональными данными будут совершены следующие действия: сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передача (распространение, предоставление, доступ), блокирование, удаление, уничтожение.</p>
+        <p>Настоящее согласие действует бессрочно до момента его отзыва путем направления соответствующего уведомления на электронный адрес: cec103@yandex.ru.</p>
+      `,
+      privacy: `
+        <p><b>1. Общие положения</b><br>Настоящая Политика в отношении обработки персональных данных (далее - Политика) разработана в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ "О персональных данных". Политика определяет порядок обработки персональных данных и меры по обеспечению их безопасности, которые принимает ИП Кузнецов С С (далее - Оператор) в отношении посетителей сайта https://cec103.ru/. Оператор ИП Кузнецов С С, ИНН 500121799960, ОГРН/ОГРНИП 325930100062884, адрес 287549, ДНР, Г.О. Мариуполь, ул. Котляревского, электронная почта cec103@yandex.ru.</p>
+        <p><b>2. Основные понятия</b><br>Персональные данные - любая информация, относящаяся к прямо или косвенно определённому физическому лицу (субъекту персональных данных). Обработка персональных данных - любое действие с персональными данными (сбор, запись, хранение, использование, удаление и другие). Субъект персональных данных - посетитель сайта, оставивший свои данные.</p>
+        <p><b>3. Какие данные и чьи мы обрабатываем</b><br>Оператор обрабатывает персональные данные посетителей сайта, которые те предоставляют добровольно через формы: фамилия и имя, номер телефона, адрес электронной почты, иные данные. Также автоматически обрабатываются технические данные: файлы cookie, IP-адрес, данные систем аналитики.</p>
+        <p><b>4. Цели обработки</b><br>Оператор обрабатывает персональные данные для следующих целей: обработка заявок и обращений, обратная связь с посетителем, отправка рассылки, выполнение договора, доставка заказа, аналитика и улучшение работы сайта.</p>
+        <p><b>5. Правовые основания</b><br>Правовыми основаниями обработки являются: Федеральный закон 152-ФЗ, согласие субъекта персональных данных, договор, стороной которого является субъект, а также иные основания, предусмотренные законодательством.</p>
+        <p><b>6. Порядок и условия обработки</b><br>Обработка ведётся как с использованием средств автоматизации, так и без них. Оператор не передаёт персональные данные третьим лицам, за исключением случаев, предусмотренных законом, и следующих сервисов, обеспечивающих работу сайта: Трансграничная передача персональных данных не осуществляется.</p>
+        <p><b>7. Сроки обработки и хранения</b><br>Персональные данные обрабатываются до достижения целей обработки, отзыва согласия субъектом или истечения сроков, установленных законодательством. После этого данные удаляются или обезличиваются.</p>
+        <p><b>8. Файлы cookie и аналитика</b><br>Сайт использует файлы cookie и системы аналитики (например, Яндекс Метрику) для корректной работы сайта и анализа посещаемости. Посетитель может отключить cookie в настройках браузера. Продолжая пользоваться сайтом, посетитель соглашается на обработку файлов cookie.</p>
+        <p><b>9. Права субъекта персональных данных</b><br>Субъект вправе: получать информацию об обработке своих персональных данных; требовать уточнения, блокирования или удаления своих данных; отозвать согласие на обработку персональных данных. Для реализации прав направьте запрос на электронную почту cec103@yandex.ru.</p>
+        <p><b>10. Меры защиты</b><br>Оператор принимает организационные и технические меры для защиты персональных данных от неправомерного или случайного доступа, изменения, копирования, распространения и иных неправомерных действий.</p>
+        <p><b>11. Отзыв согласия и изменение Политики</b><br>Согласие на обработку отзывается направлением запроса на cec103@yandex.ru. Оператор вправе изменять настоящую Политику. Новая редакция вступает в силу с момента публикации на сайте, если иное не предусмотрено новой редакцией.</p>
+        <p><b>Реквизиты Оператора:</b><br>ИП Кузнецов С С ИНН 500121799960, ОГРН 325930100062884. Адрес: 287549, ДНР, Г.О. Мариуполь, ул. Котляревского 34. Электронная почта: cec103@yandex.ru.</p>
+      `,
+      offer: `
+        <p><b>1. Общие положения и термины</b><br>Настоящий документ является публичной офертой (далее - Оферта) в соответствии со статьёй 437 Гражданского кодекса РФ. ИП Кузнецов С С (далее - Исполнитель/Продавец) публикует Оферту на сайте https://cec103.ru/. Акцепт Оферты означает заключение договора на изложенных ниже условиях. Заказчик/Покупатель - лицо, оформившее заказ на Сайте. Акцепт - полное и безоговорочное принятие условий Оферты путём оплаты заказа или оставления заявки. Товар/Услуга - предмет договора, указанный на Сайте.</p>
+        <p><b>2. Предмет договора</b><br>Исполнитель обязуется передать Покупателю товар или оказать услугу, выбранную на Сайте, а Покупатель обязуется оплатить и принять их на условиях Оферты. Описание, характеристики и стоимость товаров и услуг размещены на соответствующих страницах Сайта.</p>
+        <p><b>3. Порядок заключения договора (акцепт)</b><br>Договор считается заключённым с момента акцепта Оферты Покупателем. Акцептом является оплата заказа и/или оформление заказа с проставлением отметки о согласии с условиями Оферты. Совершая акцепт, Покупатель подтверждает, что ознакомился с условиями Оферты и принимает их в полном объёме.</p>
+        <p><b>4. Цена и порядок оплаты</b><br>Цена товаров и услуг указывается на Сайте в рублях. Исполнитель вправе изменять цены, при этом цена заказа фиксируется в момент его оформления. Оплата производится способами, указанными на Сайте: банковской картой онлайн, иными способами. Обязательство по оплате считается исполненным с момента поступления денежных средств Исполнителю.</p>
+        <p><b>5. Права и обязанности сторон</b><br>Исполнитель обязуется передать товар или оказать услугу надлежащего качества в согласованные сроки. Покупатель обязуется предоставить достоверные данные для исполнения заказа, оплатить и принять товар или услугу. Стороны вправе требовать исполнения обязательств в соответствии с Офертой и законодательством РФ.</p>
+        <p><b>6. Сроки и порядок передачи товара или оказания услуги</b><br>Сроки передачи товара или оказания услуги указываются на Сайте или согласуются с Покупателем при оформлении заказа. Для услуг: услуга оказывается в порядке, описанном на странице услуги.</p>
+        <p><b>7. Возврат и обмен</b><br>Покупатель вправе отказаться от товара в порядке и сроки, установленные законом о защите прав потребителей и Правилами продажи товаров по договору розничной купли-продажи. Возврат денежных средств производится в установленный законом срок. Для услуг: условия отказа от услуги и возврата оплаты указываются в соответствии с законодательством.</p>
+        <p><b>8. Ответственность сторон и форс-мажор</b><br>За неисполнение обязательств стороны несут ответственность в соответствии с законодательством РФ. Стороны освобождаются от ответственности при наступлении обстоятельств непреодолимой силы (форс-мажор). Исполнитель не несёт ответственности за неисполнение заказа по причине предоставления Покупателем недостоверных данных.</p>
+        <p><b>9. Заключительные положения и реквизиты</b><br>Исполнитель вправе изменять Оферту, новая редакция вступает в силу с момента публикации на Сайте. Споры разрешаются путём переговоров, а при недостижении согласия в соответствии с законодательством РФ. Обработка персональных данных ведётся согласно Политике конфиденциальности по адресу https://cec103.ru/.</p>
+        <p><b>Реквизиты:</b><br>ИП Кузнецов С С, ИНН 500121799960, ОГРН/ОГРНИП 325930100062884, адрес 287549, ДНР, Г.О. Мариуполь, ул. Котляревского д.3, электронная почта cec103@yandex.ru.</p>
+      `,
+      promo: `
+        <p><b>СОГЛАСИЕ НА ПОЛУЧЕНИЕ РЕКЛАМНОЙ РАССЫЛКИ</b></p>
+        <p>Настоящим я даю свое согласие ИП Кузнецов С С (сайт https://cec103.ru/) на получение информационных и рекламных сообщений.</p>
+        <p>Рассылка может осуществляться по электронной почте, через СМС-сообщения, а также через популярные мессенджеры по номеру телефона, указанному мной при заполнении формы на сайте.</p>
+        <p>Данное согласие предоставляется бессрочно. Я проинформирован о том, что в любой момент могу отозвать свое согласие на получение рекламной рассылки.</p>
+        <p>Для отзыва согласия достаточно перейти по специальной ссылке «Отписаться от рассылки», которая присутствует в каждом письме, либо направить соответствующий запрос в свободной форме на электронную почту: <b>cec103@yandex.ru</b>.</p>
+      `
+    };
+
+    function openModal(title, text) {
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalBody').innerHTML = text;
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'flex';
+      setTimeout(() => modal.classList.add('show'), 10);
+      document.body.style.overflow = 'hidden'; 
+    }
+
+    function openLegalModal(docType) {
+      let title = '';
+      if (docType === 'privacy') title = 'Политика конфиденциальности';
+      else if (docType === 'consent') title = 'Согласие на обработку ПД';
+      else if (docType === 'offer') title = 'Публичная оферта';
+      else if (docType === 'promo') title = 'Согласие на рекламную рассылку';
+
+      document.getElementById('legalModalTitle').innerText = title;
+      document.getElementById('legalModalBody').innerHTML = legalDocs[docType];
+      
+      const modal = document.getElementById('legalModal');
+      modal.style.display = 'flex';
+      setTimeout(() => modal.classList.add('show'), 10);
+      document.body.style.overflow = 'hidden'; 
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      modal.classList.remove('show');
+      setTimeout(() => modal.style.display = 'none', 300);
+      document.body.style.overflow = ''; 
+    }
+
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.classList.remove('show');
+        setTimeout(() => event.target.style.display = 'none', 300);
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Валидация формы
+    const form = document.getElementById('main-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const requiredInputs = form.querySelectorAll('[required]');
+
+    submitBtn.addEventListener('click', function() {
+      let isFormValid = true;
+      requiredInputs.forEach(input => {
+        if (!input.checkValidity()) {
+          isFormValid = false;
+          const wrapper = input.type === 'checkbox' ? input.parentElement : input;
+          if (input.type === 'checkbox') {
+            wrapper.classList.add('error-text');
+            wrapper.querySelector('.checkmark').classList.add('error-highlight');
+          } else {
+            wrapper.classList.add('error-highlight');
+          }
+          wrapper.classList.remove('shake');
+          void wrapper.offsetWidth;
+          wrapper.classList.add('shake');
+        }
+      });
+      if (isFormValid) {
+        form.submit();
+      }
+    });
+
+    requiredInputs.forEach(input => {
+      input.addEventListener('input', function() {
+        if (this.type === 'checkbox') {
+          this.parentElement.classList.remove('error-text');
+          this.parentElement.querySelector('.checkmark').classList.remove('error-highlight');
+        } else {
+          this.classList.remove('error-highlight');
+        }
+      });
+    });
+  </script>
+
+  <!-- Подвал -->
+  <footer>
+    <div class="container">
+      <div class="footer-flex">
+        <div class="footer-brand">
+          <h3>СЕС Защита</h3>
+          <p style="margin-bottom: 10px;">ИП Кузнецов С С<br>ИНН 500121799960, ОГРН 325930100062884</p>
+          <p style="margin-bottom: 10px;">г. Мариуполь, ул. Котляревского, д. 3<br>cec103@yandex.ru</p>
+          <p>ПН-СБ: 09:00 - 18:00<br>ВС: Выходной</p>
+        </div>
+        <div class="footer-links">
+          <h4 style="color: var(--white); margin-bottom: 5px;">Правовая информация</h4>
+          <a onclick="openLegalModal('consent')">Согласие на обработку ПД</a>
+          <a onclick="openLegalModal('privacy')">Политика конфиденциальности</a>
+          <a onclick="openLegalModal('offer')">Договор оферты</a>
+          <a onclick="openLegalModal('promo')">Согласие на рассылку</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 1997 - 2026 СЕС Защита. Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
