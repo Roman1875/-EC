@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>СEС Защита - Профессиональная дезинсекция и дератизация</title>
+  <title>СEС Защита - Специализированная экстренная служба</title>
   
   <script type="text/javascript">
       (function(m,e,t,r,i,k,a){
@@ -38,7 +38,7 @@
     a { text-decoration: none; color: inherit; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
     
-    /* Топ-баннер (Лицензия) */
+    /* Топ-баннер */
     .top-warning { background-color: #EF4444; color: var(--white); text-align: center; padding: 12px 20px; font-weight: 700; font-size: 15px; position: relative; z-index: 101; line-height: 1.5; }
     .top-warning span { display: block; font-size: 13px; font-weight: 500; opacity: 0.9; margin-top: 4px; }
 
@@ -47,7 +47,7 @@
     .header-content { display: flex; justify-content: space-between; align-items: center; }
     .logo { font-size: 28px; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 8px; letter-spacing: -0.5px; }
     .logo span { color: var(--accent); }
-    .logo-sub { font-size: 13px; color: var(--text-light); display: block; line-height: 1; font-weight: 500; }
+    .logo-sub { font-size: 11px; color: var(--text-light); display: block; line-height: 1.2; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
     .header-contacts { display: flex; gap: 30px; align-items: center; }
     .phone { font-weight: 700; font-size: 18px; color: var(--primary); transition: color 0.2s; }
     .phone:hover { color: var(--accent); }
@@ -55,11 +55,11 @@
     .btn-call:hover { background: var(--accent); transform: translateY(-2px); }
 
     /* Главный экран */
-    .hero { background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.85)), url('img/hero-bg.jpg') center/cover; padding: 80px 0; color: var(--white); }
+    .hero { background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.85)), url('img/hero-bg.jpg') center/cover; padding: 70px 0; color: var(--white); }
     .hero-flex { display: flex; gap: 60px; align-items: center; justify-content: space-between; }
     .hero-text { flex: 1; }
-    .hero-text h1 { font-size: 44px; font-weight: 800; margin-bottom: 20px; line-height: 1.15; letter-spacing: -1px; }
-    .hero-text p { font-size: 20px; margin-bottom: 30px; color: #CBD5E1; }
+    .hero-text h1 { font-size: 42px; font-weight: 800; margin-bottom: 20px; line-height: 1.15; letter-spacing: -1px; }
+    .hero-text p.honest-text { font-size: 18px; margin-bottom: 30px; color: #E2E8F0; line-height: 1.5; border-left: 3px solid var(--accent); padding-left: 15px; font-weight: 500; }
     .licence-badge { display: inline-flex; align-items: center; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); padding: 8px 16px; border-radius: 100px; font-weight: 600; font-size: 14px; margin-bottom: 25px; backdrop-filter: blur(5px); }
     .licence-badge span { color: #FBBF24; margin-right: 8px; font-size: 16px; }
 
@@ -82,7 +82,7 @@
     .custom-checkbox a { color: var(--primary); text-decoration: underline; font-weight: 600; }
     .custom-checkbox a:hover { color: var(--accent); }
 
-    /* Ошибки */
+    /* Ошибки валидации */
     .error-highlight { border-color: #EF4444 !important; background-color: #FEF2F2 !important; }
     .error-text { color: #EF4444 !important; }
     .error-text a { color: #EF4444 !important; }
@@ -168,7 +168,7 @@
   <header>
     <div class="container header-content">
       <div class="logo">
-        <div>СE<span>C</span><span class="logo-sub">Защита</span></div>
+        <div>СE<span>C</span><span class="logo-sub">Специализированная экстренная служба</span></div>
       </div>
       <div class="header-contacts">
         <div style="text-align: right;">
@@ -184,13 +184,15 @@
   <section class="hero">
     <div class="container hero-flex">
       <div class="hero-text">
-        <div class="licence-badge"><span>✓</span> Предприятие аккредитовано (г. Мариуполь)</div>
-        <h1>Уничтожение насекомых, грызунов и вирусов с гарантией</h1>
-        <p>Профессионально занимаемся дезинсекцией, дератизацией и дезинфекцией с 1997 года.</p>
+        <div class="licence-badge"><span>✓</span> Официальное частное предприятие (г. Мариуполь)</div>
+        <h1>Уничтожение насекомых, грызунов и вирусов</h1>
+        
+        <p class="honest-text">На нашем сайте всё кратко и без воды. Никаких сказок про космические технологии — всё предельно ясно и понятно. <b>100% результат и только.</b></p>
+        
         <ul style="list-style: none; margin-bottom: 30px; line-height: 2.2; font-size: 18px; color: #E2E8F0;">
-          <li>✓ Безопасные сертифицированные препараты</li>
-          <li>✓ Официальный договор и гарантия результата</li>
-          <li>✓ Выезд в день обращения</li>
+          <li>✓ <b>100% анонимность</b> — соседи о вашей проблеме не узнают.</li>
+          <li>✓ <b>Без запаха</b> — окна закрывать и запечатывать не нужно.</li>
+          <li>✓ <b>Профессионально</b> — обработка проводится быстро, аккуратно и качественно.</li>
         </ul>
       </div>
       
@@ -204,32 +206,18 @@
           <input class="form-input" type="tel" name="phone" placeholder="Ваш телефон" required>
           
           <div style="margin-top: 20px; margin-bottom: 25px;">
-              <!-- 1. Согласие ПД (Отдельная галочка) -->
+              <!-- 1. Обязательная галочка (Объединенная для экономии места) -->
               <label class="custom-checkbox">
-                  <input type="checkbox" name="privacy_consent" required>
+                  <input type="checkbox" name="legal_consent" required>
                   <span class="checkmark"></span>
-                  <span>Я даю согласие на <a href="#" onclick="openLegalModal('consent'); return false;">обработку персональных данных</a></span>
+                  <span>Я согласен на <a href="#" onclick="openLegalModal('consent'); return false;">обработку ПД</a>, принимаю <a href="#" onclick="openLegalModal('privacy'); return false;">Политику</a> и <a href="#" onclick="openLegalModal('offer'); return false;">Оферту</a></span>
               </label>
 
-              <!-- 2. Политика конфиденциальности (Отдельная галочка) -->
-              <label class="custom-checkbox">
-                  <input type="checkbox" name="policy_consent" required>
-                  <span class="checkmark"></span>
-                  <span>Я подтверждаю, что ознакомлен с <a href="#" onclick="openLegalModal('privacy'); return false;">Политикой конфиденциальности</a></span>
-              </label>
-              
-              <!-- 3. Оферта -->
-              <label class="custom-checkbox">
-                  <input type="checkbox" name="offer_consent" required>
-                  <span class="checkmark"></span>
-                  <span>Я принимаю условия <a href="#" onclick="openLegalModal('offer'); return false;">Публичной оферты</a></span>
-              </label>
-
-              <!-- 4. Рекламная рассылка (Короткая + модалка) -->
+              <!-- 2. Рекламная рассылка (Отдельная, необязательная) -->
               <label class="custom-checkbox">
                   <input type="checkbox" name="promo_consent">
                   <span class="checkmark"></span>
-                  <span>Я даю согласие на получение <a href="#" onclick="openLegalModal('promo'); return false;">рекламной и информационной рассылки</a></span>
+                  <span>Я даю согласие на получение <a href="#" onclick="openLegalModal('promo'); return false;">рекламной рассылки</a></span>
               </label>
           </div>
 
