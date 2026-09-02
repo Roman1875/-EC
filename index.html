@@ -87,12 +87,7 @@
     .error-text { color: #EF4444 !important; }
     .error-text a { color: #EF4444 !important; }
     .shake { animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both; }
-    @keyframes shake {
-      10%, 90% { transform: translate3d(-2px, 0, 0); }
-      20%, 80% { transform: translate3d(3px, 0, 0); }
-      30%, 50%, 70% { transform: translate3d(-5px, 0, 0); }
-      40%, 60% { transform: translate3d(5px, 0, 0); }
-    }
+    @keyframes shake { 10%, 90% { transform: translate3d(-2px, 0, 0); } 20%, 80% { transform: translate3d(3px, 0, 0); } 30%, 50%, 70% { transform: translate3d(-5px, 0, 0); } 40%, 60% { transform: translate3d(5px, 0, 0); } }
 
     /* Услуги */
     .services { padding: 100px 0; background: var(--bg-light); }
@@ -106,13 +101,21 @@
     .read-more::after { content: '→'; margin-left: 8px; transition: transform 0.2s; }
     .card:hover .read-more::after { transform: translateX(5px); }
 
+    /* Акции и Скидки (Новый блок) */
+    .promotions { padding: 100px 0; background: var(--primary); color: var(--white); }
+    .promotions .section-title { color: var(--white); margin-bottom: 60px; }
+    .promo-card { background: rgba(255, 255, 255, 0.05); padding: 40px 30px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; transition: all 0.3s ease; }
+    .promo-card:hover { transform: translateY(-8px); border-color: var(--accent); background: rgba(255, 255, 255, 0.08); box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5); }
+    .promo-icon { font-size: 48px; margin-bottom: 20px; }
+    .promo-card h4 { font-size: 22px; font-weight: 700; margin-bottom: 15px; color: var(--white); }
+    .promo-card p { color: #94A3B8; font-size: 16px; line-height: 1.6; }
+
     /* Преимущества */
     .advantages { padding: 100px 0; background: var(--white); }
     .adv-split { display: flex; gap: 60px; align-items: flex-start; }
     .adv-left { flex: 1; position: sticky; top: 120px; }
     .adv-left h2 { font-size: 42px; font-weight: 800; color: var(--primary); line-height: 1.2; margin-bottom: 20px; }
     .adv-left p { font-size: 18px; color: var(--text-light); line-height: 1.6; }
-    
     .adv-right { flex: 1; display: flex; flex-direction: column; gap: 20px; }
     .adv-row { display: flex; gap: 25px; align-items: center; background: var(--white); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-soft); cursor: pointer; transition: all 0.3s; border-left: 4px solid transparent; border: 1px solid #F1F5F9; }
     .adv-row:hover { transform: translateX(-10px); border-left: 4px solid var(--accent); box-shadow: var(--shadow-hover); }
@@ -124,7 +127,7 @@
     .map-section { width: 100%; height: 500px; line-height: 0; }
     .map-section iframe { width: 100%; height: 100%; border: none; filter: grayscale(0.2); }
 
-    /* Модальное окно (Универсальное) */
+    /* Модальное окно */
     .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.7); opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(4px); }
     .modal.show { display: flex; opacity: 1; align-items: center; justify-content: center; }
     .modal-content { background-color: var(--white); padding: 50px; border-radius: var(--radius-lg); width: 90%; max-width: 600px; position: relative; transform: translateY(-20px) scale(0.95); transition: all 0.3s; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
@@ -133,7 +136,7 @@
     .close-btn:hover { color: var(--accent); }
     .modal-title { color: var(--primary); font-size: 28px; font-weight: 800; margin-bottom: 20px; }
     .modal-body { font-size: 16px; color: var(--text); line-height: 1.8; }
-
+    
     /* Модальное окно (Для документов) */
     .legal-modal-content { max-width: 800px; padding: 40px; }
     .legal-body { max-height: 60vh; overflow-y: auto; text-align: left; font-size: 14px; padding-right: 15px; border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0; padding-top: 20px; margin-bottom: 20px; }
@@ -206,14 +209,14 @@
           <input class="form-input" type="tel" name="phone" placeholder="Ваш телефон" required>
           
           <div style="margin-top: 20px; margin-bottom: 25px;">
-              <!-- 1. Обязательная галочка (Объединенная для экономии места) -->
+              <!-- 1. Обязательная галочка (Объединенная) -->
               <label class="custom-checkbox">
                   <input type="checkbox" name="legal_consent" required>
                   <span class="checkmark"></span>
                   <span>Я согласен на <a href="#" onclick="openLegalModal('consent'); return false;">обработку ПД</a>, принимаю <a href="#" onclick="openLegalModal('privacy'); return false;">Политику</a> и <a href="#" onclick="openLegalModal('offer'); return false;">Оферту</a></span>
               </label>
 
-              <!-- 2. Рекламная рассылка (Отдельная, необязательная) -->
+              <!-- 2. Рекламная рассылка (Отдельная) -->
               <label class="custom-checkbox">
                   <input type="checkbox" name="promo_consent">
                   <span class="checkmark"></span>
@@ -261,6 +264,30 @@
           <h4>Дезодорация</h4>
           <p>Профессиональное устранение любых неприятных запахов.</p>
           <span class="read-more">Подробнее</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Акции и Скидки (Новый блок) -->
+  <section class="promotions">
+    <div class="container">
+      <h2 class="section-title">Специальные предложения</h2>
+      <div class="grid">
+        <div class="promo-card">
+          <div class="promo-icon">📉</div>
+          <h4>Скидка 15% по договору конкурента</h4>
+          <p>Есть действующий договор с другой службой? Покажите его нам, и мы проведем обработку на 15% дешевле, сохранив 100% гарантию качества.</p>
+        </div>
+        <div class="promo-card">
+          <div class="promo-icon">🤝</div>
+          <h4>Гарантия лучшей цены</h4>
+          <p>Нашли аналогичную услугу дешевле? Мы снизим цену! Сделаем дополнительную скидку от цены конкурента без потери качества. 100% результат!</p>
+        </div>
+        <div class="promo-card">
+          <div class="promo-icon">🎁</div>
+          <h4>Кэшбэк 10% за рекомендацию</h4>
+          <p>Порекомендуйте нас друзьям или соседям. При заключении договора по вашей рекомендации вы получаете кэшбэк 10% от стоимости их заказа.</p>
         </div>
       </div>
     </div>
